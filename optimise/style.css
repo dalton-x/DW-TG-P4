@@ -7,6 +7,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
+[class*="col-"]{
+    background-color: rgba(243, 77, 77, 0.596);
+    border: 2px solid black;
+    line-height: 40px;
+    border-radius: 6px;
+} */
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -506,6 +514,7 @@ button {
 }
 
 .form-control {
+    background-color: beige;
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
@@ -739,12 +748,15 @@ h4 {
     margin-top: 24px;
 }
 
-citation{
+blockquote{
     color: black;
 }
 
 .white {
     color: #FFFFFF!important;
+}
+.black {
+    color: #000000!important;
 }
 
 .portfolio-thumb {
