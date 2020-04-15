@@ -25,7 +25,6 @@ body {
 .et-icon-edit
 {
     font-family: et-line;
-    speak: none;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
@@ -62,14 +61,14 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
+/* #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
-}
+} */
 
 .bloc {
     width: 100%;
@@ -197,7 +196,7 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
+.d-bloc .icon-bar {
     background: rgba(255, 255, 255, 1);
 }
 
@@ -296,7 +295,7 @@ a:hover {
     color: rgba(0, 0, 0, 1);
 }
 
-.l-bloc .navbar-toggle .icon-bar {
+.l-bloc .icon-bar {
     color: rgba(0, 0, 0, .6);
 }
 
@@ -355,7 +354,7 @@ a:hover {
     min-width: 100px;
 }
 
-.nav-center .navbar-brand img {
+.navbar-brand img {
     margin: 0;
 }
 
@@ -908,13 +907,13 @@ blockquote{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -932,20 +931,10 @@ blockquote{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1002,12 +991,12 @@ blockquote{
         border-right-color: transparent;
         border-left-color: transparent;
     }
-    #hero-bloc .navbar .nav {
+    /* #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
     #hero-bloc .navbar .nav a {
         color: rgba(255, 255, 255, .6);
-    }
+    } */
     .hero {
         padding: 50px 0;
     }
@@ -1015,7 +1004,7 @@ blockquote{
         left: -1px;
         right: -1px;
     }
-    .navbar-collapse {
+    /* .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
@@ -1032,7 +1021,7 @@ blockquote{
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
-    }
+    } */
     .bloc {
         padding-left: 0;
         padding-right: 0;
