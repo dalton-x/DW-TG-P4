@@ -1,29 +1,20 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #FFF;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 /* Debut Ajout et-line.css */
 
 @font-face {
     font-family: et-line;
-    src: url(../fonts/et-line.eot);
-    src: url(../fonts/et-line.eot?#iefix) format('embedded-opentype'), 
-         url(../fonts/et-line.woff) format('woff'), 
-         url(../fonts/et-line.ttf) format('truetype'), 
-         url(../fonts/et-line.svg#et-line) format('svg');
+    src: url(../optimise/fonts/et-line.eot);
+    src: url(../optimise/fonts/et-line.eot?#iefix) format('embedded-opentype'), 
+        url(../optimise/fonts/et-line.woff) format('woff'), 
+        url(../optimise/fonts/et-line.ttf) format('truetype'),
+        url(../optimise/fonts/et-line.svg#et-line) format('svg');
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-display: swap
 }
 
 .et-icon-browser,
 .et-icon-presentation,
-.et-icon-edit
-{
+.et-icon-edit{
     font-family: et-line;
     font-style: normal;
     font-weight: 400;
@@ -49,6 +40,14 @@ body {
 }
 
 /* Fin ajout et-line.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 a,
 button {
@@ -789,7 +788,7 @@ h4 {
 }
 
 .tc-black {
-    color: rgb(0, 0, 0)!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine {
